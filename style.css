@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+nav {
+    width: 100%; /* Full width of the page */
+    display: flex; /* Enable Flexbox for the layout */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Center items vertically */
+    padding: 0 12px; /* Add some padding */
+}
+
+.nav__link--list {
+    display: flex; /* Arrange links side by side */
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Reset padding for the list */
+}
+
+.nav__link--list li {
+    margin-left: 16px; /* Space between the links */
+}
+
+
+
+
+
+
+
