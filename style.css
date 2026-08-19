@@ -1,26 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
-    width: 100%; /* Full width of the page */
-    display: flex; /* Enable Flexbox for the layout */
-    justify-content: flex-start; /* Align items to the left */
+    display: flex; /* Use Flexbox to align items horizontally */
+    justify-content: space-between; /* Space out items */
     align-items: center; /* Center items vertically */
-    padding: 0 12px; /* Add some padding */
+    height: 80px; /* Set a height for the nav */
+    padding: 0; /* Add padding to the left and right */
 }
 
-.nav__link--list {
-    display: flex; /* Arrange links side by side */
-    list-style-type: none; /* Remove default list styling */
-    padding: 0; /* Reset padding for the list */
+img {
+  padding: 20px;
+  margin-bottom: 44px;
 }
 
-.nav__link--list li {
-    margin-left: 16px; /* Space between the links */
+p {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    margin-top: 4px;
+    width: 100%;
+    height: 100%;
+    max-height: 50vh;
+    padding: 20px;
+    margin-bottom: 44px;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Make the list items display in a row */
+}
+
+nav ul li {
+    margin-left: 16px; /* Add space between the links */
+    text-decoration: none; /* Remove underline */
 }
 
 
 
 
+.nav__container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 24px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    }
 
+    .purple {
+        color: #7342d6;
+    }
+
+    .nav__logo img {
+    max-height: 160px; /* Adjust this value as needed */
+    height: auto;     /* Maintain aspect ratio */
+    width: auto;      /* Maintain aspect ratio */
+    margin: 0;        /* Remove any margin that may push it out */
+}
+
+.btn {
+    background-color: #419ed0;
+    color: #fff;
+    padding: 8px 12px; /* Adjust padding to make it smaller */
+    font-size: 14px; /* Keep a smaller font size */
+    text-decoration: none;
+    border-radius: 16px;
+    border: none;
+    margin-left: 8px; /* Keep this for spacing */
+    display: flex; /* Change display to flex to help with vertical alignment */
+    align-items: center; /* Center text vertically within the button */
+    justify-content: center; /* Center text horizontally */
+}
 
 
