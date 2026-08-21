@@ -1,99 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-* {
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "inter" system-ui;
+    color: #243e63;
 }
 
-html {
-    scroll-behavior: smooth;
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
 }
+
+.row {
+    width: 100vw;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+.row__narrow {
+    width: 100%;
+    max-width: 1280;
+    margin: 0 auto;
+}
+
+section {
+    padding-bottom: 0 32px;
+}
+
+main {
+    margin-bottom: 96px;
+}
+
+/*
+NAVBAR
+*/
 
 nav {
-    display: flex; /* Use Flexbox to align items horizontally */
-    justify-content: space-between; /* Space out items */
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
     align-items: center; /* Center items vertically */
-    height: 80px; /* Set a height for the nav */
-    padding: 0; /* Add padding to the left and right */
+    padding-top: 32px;
 }
 
-img {
-  padding: 20px;
-  margin-bottom: 44px;
+.nav__row {
+    display: flex;
+    flex-direction: row; /* Ensure items are in a row */
+    width: 100%;
+    justify-content: space-between; /* Space out items properly */
 }
 
-p {
+.nav__links {
+    display: flex; /* This allows the links to be in a row */
+}
+
+
+.nav__link--primary {
+    margin: 0;
+    padding: 8px 20px; /* Increased padding for a larger button */
+    margin-top: 2px;
+    border-radius: 50px; /* Adjusted for a rounded pill shape */
+    color: #fff;
+    background-color: #6415ff;
     line-height: 1.5;
+    border: none;
+    width: auto;
+    transition: all 300ms ease;
+}
+
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding-bottom: 4px;
+}
+
+.nav__logo--img {
+    height: 40px;
+    width: 40px;
+}
+
+.nav__logo--title {
+    font-weight: 900;
+    font-size: 24px;
+    margin-left: 12px;
+    padding-bottom: 2px;
+    letter-spacing: 0.6px;
+}
+
+div {
+   display: block;
+   unicode-bidi: isolate;
+}
+
+.nav__link {
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 4px;
+    letter-spacing: 0.35px;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    transition: all 300ms;
+    margin: 0 24px;
+}
+
+.menu__links {
+    width: 100%;
+    height: 100%
+    display: flex;
+    align-items: center;
+}
+
+.btn__menu--svg:hover {
+    filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg) brightness(94%) contrast(115%);
+}
+
+.btn__menu {
+    display: none;
+    background: transparent;
+    border: none;
+    transition: all 300ms ease;
+}
+
+.nav__link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%
+    transition: all 300ms;
+    opacity: 0;
+}
+
+.login {
+    margin-left: 48px;
 }
 
 a {
+    display: inline;
     text-decoration: none;
 }
-
-a:hover {
-    text-decoration: underline;
-}
-
-img {
-    margin-top: 4px;
-    width: 100%;
-    height: 100%;
-    max-height: 50vh;
-    padding: 20px;
-    margin-bottom: 44px;
-}
-
-nav ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Make the list items display in a row */
-}
-
-nav ul li {
-    margin-left: 16px; /* Add space between the links */
-    text-decoration: none; /* Remove underline */
-}
-
-
-
-
-.nav__container {
-    width: 100%;
-    max-width: 1200px;
-    padding: 0 24px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    }
-
-    .purple {
-        color: #7342d6;
-    }
-
-    .nav__logo img {
-    max-height: 160px; /* Adjust this value as needed */
-    height: auto;     /* Maintain aspect ratio */
-    width: auto;      /* Maintain aspect ratio */
-    margin: 0;        /* Remove any margin that may push it out */
-}
-
-.btn {
-    background-color: #419ed0;
-    color: #fff;
-    padding: 8px 12px; /* Adjust padding to make it smaller */
-    font-size: 14px; /* Keep a smaller font size */
-    text-decoration: none;
-    border-radius: 16px;
-    border: none;
-    margin-left: 8px; /* Keep this for spacing */
-    display: flex; /* Change display to flex to help with vertical alignment */
-    align-items: center; /* Center text vertically within the button */
-    justify-content: center; /* Center text horizontally */
-}
-
-
