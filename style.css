@@ -14,9 +14,10 @@ body {
 }
 
 .row {
-    width: 100vw;
-    overflow-x: hidden;
-    margin: auto;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
 }
 
 .row__narrow {
@@ -52,7 +53,8 @@ nav {
 }
 
 .nav__links {
-    display: flex; /* This allows the links to be in a row */
+    display: flex;
+    align-items: center;
 }
 
 
