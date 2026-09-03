@@ -305,16 +305,16 @@ header .row {
 .header__email--input {
   width: 100%;
   border-radius: 500px;
-  border: 2px solid rgb (229, 231, 235);
+  border: 2px solid rgb(229, 231, 235);
   padding: 20px 192px 20px 32px;
   color: rgb(36, 62, 99)
   font-size: 16px;
   font-weight: 500;
-  position: absolute;
+  position: relative;
   top: 0;
   bottom: 0;
   left: 0;
-  z-index: 1;
+  z-index: 10;
   transition: border-color 300ms;
 }
 
