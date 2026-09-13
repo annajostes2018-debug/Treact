@@ -576,5 +576,33 @@ position: relative;
     fill: currentColor;
   }
 
+  /* VALUES */
+
+  #values .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #values .section__title {
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+
+  #values .btn {
+    margin-top: 48;
+  }
+
+  .values {
+    margin-top: 2rem;
+    margin-right: 2rem;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+
+
 
 
