@@ -5,3 +5,6 @@ function openMenu() {
 function closeMenu() {
     document.querySelector(".menu").classList.remove("menu--open");
 }
+
+
+
